@@ -6,10 +6,10 @@ function sendMail(){
     if(status){
 
         var params = {
-            name : document.getElementById("name").value,
-            email : document.getElementById("email").value,
-            subject : document.getElementById("subject").value,
-            message : document.getElementById("message").value
+            name : document.getElementById("name").value.trim(),
+            email : document.getElementById("email").value.trim(),
+            subject : document.getElementById("subject").value.trim(),
+            message : document.getElementById("message").value.trim()
     
         }
         
@@ -49,6 +49,6 @@ if(name===""||email===""||subject===""||message==="")
  }
 
 return btn;
-
+ 
 }
 
